@@ -17,3 +17,19 @@ var btnMenuOpen =  document.getElementById("btnMenuOpen"),
         btnResponsive.style.transitionDelay = "0.05s";
         btnResponsive.classList.remove("active");
     })
+
+
+//SLIDER DE PRODUCTOS
+ var contenedor = document.querySelector('.slider'),
+     btnIzquierda = document.getElementById("btn-izquierda"),
+     btnDerecha = document.getElementById("btn-derecha");
+
+     //EVENTO BOTON DERECHO
+     btnDerecha.addEventListener("click", function () {
+        contenedor.scrollLeft += contenedor.offsetWidth;
+     });
+ //EVENTO BOTON IZQUIERDA
+     btnIzquierda.addEventListener("click", function () {
+         contenedor.scrollLeft -= contenedor.offsetWidth;
+     });
+

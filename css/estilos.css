@@ -292,6 +292,8 @@ body{
 
     /*Slider*/
     .slider {
+        display: flex;
+        overflow: hidden;
         height: calc(100vh - 0px);
     }
 
