@@ -230,6 +230,119 @@ body{
     transform: scale(1.15);
 }
 
+
+/*Secion servicios*/
+
+#servicios {
+    height: 100vh;
+    background: #fff;
+    padding: 40px;
+}
+
+.sevicios-titulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.servicios-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 30px;
+    grid-template-areas: "ingredientes imagen rapidez"
+                         "calidad      imagen delivery";
+}
+ .calidad {
+    grid-row: calidad;
+    grid-column: calidad;
+ }
+
+ .ingredientes {
+    grid-row: ingredientes;
+    grid-column: ingredientes;
+ }
+
+.rapidez {
+    grid-column: rapidez;
+    grid-column: rapidez;
+}
+
+.delivery {
+    grid-column: delivery;
+    grid-row: delivery;
+}
+
+.imagen-central {
+    grid-column: imagen;
+    grid-row: imagen;
+    transition: all 0.5s;
+}
+
+.imagen-central:hover {
+    transform: scale(1.1);
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items span {
+    width: 95px;
+    font-size: 40px;
+    color: var(--color-secundario);
+    padding: 20px;
+    border: 5px double #dedede;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.items span:hover {
+    background: var(--color-secundario);
+    color: #fff;
+}
+
+.ingredientes span,
+.calidad span {
+    color: var(--color-primary);
+}
+
+.ingredientes span:hover,
+.calidad span:hover {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.items .titulo-item {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.item .text-item {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 850px){
     .container-productos {
         flex-direction: column;
