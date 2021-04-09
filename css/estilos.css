@@ -322,11 +322,16 @@ body{
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 700;
+    padding: 10px;
     text-align: center;
 }
 
-.item .text-item {
+.items .texto-item {
     font-size: 14px;
+    color: var(--color-texto);
+    text-align: center;
+    font-size: italic;
+    padding: 10px 20px;
 }
 
 
@@ -351,6 +356,27 @@ body{
     .descripcion-productos {
         width: 70%;
         order: 1;
+    }
+
+    .descripcion-productos .btn {
+        padding: 10px 20px;
+    }
+
+    .descripcion-productos .btn:hover {
+        padding: 10px 30px;
+    }
+
+    /*SECCION SERVICIOS*/
+
+    .servicios-container {
+        padding-top: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:  "ingredientes  rapidez"
+                               "calidad      delivery";
+    }
+
+    .imagen-central {
+        display: none;
     }
 }
 
